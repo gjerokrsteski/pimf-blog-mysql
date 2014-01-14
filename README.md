@@ -1,7 +1,7 @@
 Welcome to PIMF Blog bundle using MySQL
 =======================================
 This Blog is a run ready bundle, which uses PIMF framework including a blog application based on MySQL database.
-The session will stored at SQLite database. Here you can learn how to work with Pimf\EntityManager, Pimf\Util\Validator
+The session will be stored at SQLite database. Here you can learn how to work with Pimf\EntityManager, Pimf\Util\Validator
 and Pimf\View.
 
 Installation & Configuration
