@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title><?=$this->blog_title?></title>
+    <style type="text/css">
+        @import url(http://fonts.googleapis.com/css?family=Lobster);
+        body {
+            font-size   : 12pt;
+            color       : #666;
+            line-height : 28px;
+        }
+        a, a:visited {
+            color : #2972A2;
+        }
+        a:hover {
+            color : #6ed347;
+        }
+        h1{
+          font-family: 'Lobster', cursive;
+          font-weight: bold;
+        }
+        footer{
+          font-size   : 10pt;
+        }
+   	</style>
+</head>
+<body>
+  <header>
+      <h1><?php echo $this->blog_title?></h1>
+  </header>
+  <hr/>
+  <?php echo $this->blog_content?>
+  <hr/>
+  <footer>
+        <p><?php echo $this->blog_footer ?> Now that you're up and running, it's time to start creating!
+          Here are some links to help you get started:
+        </p>
+
+        <ul class="out-links">
+          <li><a href="http://pimf-framework.de">Official Website</a></li>
+          <li><a href="https://github.com/gjerokrsteski/pimf-framework/wiki">Learning PIMF</a></li>
+          <li><a href="https://github.com/gjerokrsteski/pimf-blog">GitHub Repository</a></li>
+        </ul>
+  </footer>
+</body>
+</html>
