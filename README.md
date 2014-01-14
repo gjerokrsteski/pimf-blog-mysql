@@ -7,25 +7,25 @@ and Pimf\View.
 Installation & Configuration
 ----------------------------
 
-1. Clone the repository
+1.) Clone the repository
 
-```php
+```cli
   git clone --recursive https://github.com/gjerokrsteski/pimf-blog-mysql.git
 ```
 
-2. Change to the root directory
+2.) Change to the root directory
 
-```php
+```cli
   cd pimf-blog-mysql/
 ```
 
-3. Update all submodules
+3.) Update all submodules
 
-```php
+```cli
   git submodule foreach git pull origin master
 ```
 
-4. Please configure your database connection at **app/MyFirstBlog/config.app.php** according to you system needs.
+4.) Please configure your database connection at **app/MyFirstBlog/config.app.php** according to you system needs.
 
 ```php
   /*
@@ -44,13 +44,13 @@ Installation & Configuration
   ),
 ```
 
-5. Initialize PIMF and follow the instructions
+5.) Initialize PIMF and follow the instructions
 
-```php
+```cli
   php pimf core:init
 ```
 
-6. Next, you will need to create a blog database and table. Please execute this at you MySQL.
+6.) Next, you will need to create a blog database and table. Please execute this at you MySQL.
 
 ```sql
   CREATE DATABASE IF NOT EXISTS db_blog;
@@ -62,15 +62,15 @@ Installation & Configuration
   ) ENGINE=InnoDB;
 ```
 
-7. Let PIMF generate the sqlite session table for you!
+7.) Let PIMF generate the sqlite session table for you!
 
-```php
+```cli
   php pimf core:create_session_table
 ```
 
-8. Finally create one or more test entries at your blog.
+8.) Finally create one or more test entries at your blog.
 
-```php
+```cli
   php pimf blog:insert
 ```
 
