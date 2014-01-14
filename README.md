@@ -62,7 +62,7 @@ Installation & Configuration
   ) ENGINE=InnoDB;
 ```
 
-7.) Let PIMF generate the sqlite session table for you!
+7.) Let PIMF generate the **sqlite** session table for you!
 
 ```cli
   php pimf core:create_session_table
