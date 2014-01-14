@@ -44,13 +44,7 @@ Installation & Configuration
   ),
 ```
 
-5.) Initialize PIMF and follow the instructions
-
-```cli
-  php pimf core:init
-```
-
-6.) Next, you will need to create a blog database and table. Please execute this at you MySQL.
+5.) Create a blog database and table. Please execute this at you MySQL.
 
 ```sql
   CREATE DATABASE IF NOT EXISTS db_blog;
@@ -60,6 +54,12 @@ Installation & Configuration
     `title` VARCHAR(50) NOT NULL,
     `content` TEXT NOT NULL
   ) ENGINE=InnoDB;
+```
+
+6.) Initialize PIMF and follow the instructions
+
+```cli
+  php pimf core:init
 ```
 
 7.) Let PIMF generate the **sqlite** session table for you!
