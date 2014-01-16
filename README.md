@@ -8,7 +8,7 @@ System Requirements
 -------------------
 This bundle hase system requirements to PHP's extentions: "PDO", "pdo_sql" and "pdo_sqlite". The extentions
 have to be compiled within your PHP. Please check by executing **php -m** on you command interface - and
-take a look for them. If they are there than everithing will be fine - othervise please navigate
+take a look for them. If they are there than everything will be fine - otherwise please navigate
 to http://www.php.net/manual/pdo.setup.php and find out how to recompile them to your PHP version.
 
 Installation & Configuration
