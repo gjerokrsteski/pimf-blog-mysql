@@ -108,11 +108,8 @@ class Blog extends Base
       $this->request->fromGet()->get('id')
     );
 
-    // open new json view
-    $view = new ViewJson();
-
-    // pump all data to the view and render
-    $view->pump($entry->toArray())->render();
+    // send new json response
+    $this->response->asJSON()->send($entry->toArray());
   }
 
   /**

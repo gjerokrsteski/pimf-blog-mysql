@@ -82,13 +82,7 @@ $config_app = array(
   'bootstrap' => array(
     'expected' => array(
       'php_version' => 5.3,
-      'extensions' => array(
-        'pdo' => 'Please navigate to "http://php.net/manual/pdo.installation.php" to find out how to install "PDO" on your system!',
-        'pdo_sqlite' => 'Please navigate to "http://php.net/manual/ref.pdo-sqlite.php" to find out how to install "PDO_SQLITE" on your system!',
-        'pdo_mysql' => 'Please navigate to "http://php.net/manual/ref.pdo-mysql.php" to find out how to install "PDO_MYSQL" on your system!',
-        'date' => 'Please navigate to "http://php.net/manual/datetime.installation.php" to find out how to install "Date/Time" on your system!',
-      ),
-    ),
+     ),
     'local_temp_directory' => '/tmp/'
   ),
 
