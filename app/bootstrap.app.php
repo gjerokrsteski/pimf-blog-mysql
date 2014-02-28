@@ -16,3 +16,4 @@ require_once BASE_PATH .'pimf-framework/utils.php';
 use \Pimf\Application as App;
 
 App::bootstrap($config, $_SERVER);
+
