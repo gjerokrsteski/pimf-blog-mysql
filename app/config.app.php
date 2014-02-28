@@ -10,7 +10,7 @@
 | configuration arrays.
 |
 */
-$config_app = array(
+return array(
 
   /*
   |------------------------------------------------------------------------
@@ -168,6 +168,3 @@ $config_app = array(
    ),
 
 );
-
-// please do not edit the code below!!!
-if(isset($config)){$config = array_merge($config, $config_app);}

@@ -4,7 +4,7 @@
 | PIMF Application gateway/runner
 |--------------------------------------------------------------------------
 */
-require_once 'app/bootstrap.app.php';
+include_once 'app/bootstrap.app.php';
 
 use \Pimf\Application as App;
 
