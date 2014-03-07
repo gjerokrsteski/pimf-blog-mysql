@@ -1,8 +1,9 @@
 <?php
 namespace MyFirstBlog\Controller;
 
-use Pimf\Controller\Base, Pimf\View, Pimf\Registry, Pimf\Util\Validator, Pimf\Controller\Exception as Bomb,
-    Pimf\View\Json as ViewJson, Pimf\Cli\Io, MyFirstBlog\Model\Entry;
+use Pimf\Controller\Base, Pimf\View, Pimf\Registry, Pimf\Util\Validator,
+    Pimf\Controller\Exception as Bomb,
+    Pimf\Cli\Io, MyFirstBlog\Model\Entry;
 
 class Blog extends Base
 {

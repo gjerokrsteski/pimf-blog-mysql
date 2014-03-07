@@ -26,8 +26,9 @@ class Entry extends Base
 
   /**
    * @param int $id
-   * @return Entry
-   * @throws OutOfRangeException
+   *
+   * @return mixed|object
+   * @throws \OutOfRangeException
    */
   public function find($id)
   {
@@ -65,7 +66,8 @@ class Entry extends Base
   }
 
   /**
-   * @param Entry $blogEntry
+   * @param \MyFirstBlog\Model\Entry $blogEntry
+   *
    * @return int
    * @throws \RuntimeException
    */
@@ -93,7 +95,8 @@ class Entry extends Base
   }
 
   /**
-   * @param Entry $blogEntry
+   * @param \MyFirstBlog\Model\Entry $blogEntry
+   *
    * @return bool
    */
   public function update(\MyFirstBlog\Model\Entry $blogEntry)
