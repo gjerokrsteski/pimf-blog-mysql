@@ -3,7 +3,7 @@ namespace MyFirstBlog\Controller;
 
 use Pimf\Controller\Base, Pimf\View, Pimf\Registry, Pimf\Util\Validator,
     Pimf\Controller\Exception as Bomb,
-    Pimf\Cli\Io, MyFirstBlog\Model\Entry;
+    Pimf\Cli\Std, MyFirstBlog\Model\Entry;
 
 class Blog extends Base
 {
@@ -118,8 +118,10 @@ class Blog extends Base
    */
   public function insertCliAction()
   {
-    $title   = Io::read('article title');
-    $content = Io::read('article content');
+    $std = new Std();
+
+    $title   = $std->read('article title');
+    $content = $std->read('article content');
 
     $res = Registry::get('em')->entry->insert(
       new Entry($title, $content)
@@ -133,9 +135,11 @@ class Blog extends Base
    */
   public function updateCliAction()
   {
-    $id      = Io::read('article id', '/[1-9999]/');
-    $title   = Io::read('article title');
-    $content = Io::read('article content');
+    $std = new Std();
+
+    $id      = $std->read('article id', '/[1-9999]/');
+    $title   = $std->read('article title');
+    $content = $std->read('article content');
 
     $em    = Registry::get('em');
     $entry = new Entry($title, $content);
@@ -152,7 +156,9 @@ class Blog extends Base
    */
   public function deleteCliAction()
   {
-    $id = Io::read('entry id', '/[1-9999]/');
+    $std = new Std();
+
+    $id = $std->read('entry id', '/[1-9999]/');
 
     $res = Registry::get('em')->entry->delete($id);
 
