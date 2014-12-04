@@ -72,7 +72,7 @@ Installation & Configuration
 7.) Let PIMF generate the **sqlite** session table for you!
 
 ```cli
-  php pimf core:create_session_table
+  php pimf core:createSessionTable
 ```
 
 8.) Finally create one or more test entries at your blog.
