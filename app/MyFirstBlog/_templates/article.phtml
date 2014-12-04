@@ -2,8 +2,8 @@
   <h2><?php echo $this->title ?></h2>
   <p><?php echo $this->content ?></p>
   <p>
-    <a href="<?php echo url('blog/listentries') ?>"><?php echo $this->back_link_title ?></a>
+    <a href="<?php echo Pimf\url('blog/listentries') ?>"><?php echo $this->back_link_title ?></a>
     &nbsp;&nbsp;
-    <a href="<?php echo url('blog/json', array('id'=>$this->id)) ?>"><?php echo $this->json_link_title ?></a>
+    <a href="<?php echo Pimf\url('blog/json', array('id'=>$this->id)) ?>"><?php echo $this->json_link_title ?></a>
   </p>
 </article>
