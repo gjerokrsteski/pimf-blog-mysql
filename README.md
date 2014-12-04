@@ -6,7 +6,7 @@ and Pimf\View.
 
 System Requirements
 -------------------
-This bundle has system requirements to PHP's extensions: "PDO", "pdo_sql" and "pdo_sqlite". The extentions
+This bundle has system requirements to PHP's extensions: "PDO", "pdo_mysql" and "pdo_sqlite". The extentions
 have to be compiled within your PHP. Please check by executing **php -m** on you command interface - and
 take a look for them. If they are there than everything will be fine - otherwise please navigate
 to http://www.php.net/manual/pdo.setup.php and find out how to recompile them to your PHP version.
