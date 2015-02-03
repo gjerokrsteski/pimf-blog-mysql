@@ -81,8 +81,17 @@ Installation & Configuration
   php pimf blog:insert
 ```
 
-Navigate to your application in a web browser. If all is well, you should see a pretty PIMF splash page.
-Get ready - there is lot more to learn!
+9.) Navigate to your application in a web browser. If all is well, you should see a pretty PIMF splash page. Get ready - there is lot more to learn!
+    
+Alternatively you can run the PHP's built-in web server that is provided since PHP 5.4.0
+   
+```php   
+   php -S localhost:8000
+```
+
+Please notice: this web server was designed to aid application development. It may also be useful for testing purposes or for 
+application demonstrations that are run in controlled environments. It is not intended to be a full-featured web server. 
+It should not be used on a public network.
 
 Learning PIMF
 -------------
