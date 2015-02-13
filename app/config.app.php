@@ -51,7 +51,7 @@ return array(
     'key'                => 'some5secret5key5here', // application key
     'default_controller' => 'blog', // the name of the fallback controller
     'routeable'          => true, // get cleaner URLs or not
-    'url'                => 'http://localhost', // URL used to access your application without a trailing slash.
+    'url'                => 'http://localhost:8000', // URL used to access your application without a trailing slash.
     'index'              => '', // if you are using mod_rewrite to get cleaner URLs let it empty otherwise set index.php
     'asset_url'          => '', // the base URL used for your application's asset files
   ),
