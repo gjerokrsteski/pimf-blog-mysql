@@ -99,3 +99,7 @@ One of the best ways to learn PIMF is to read through the entirety of its docume
 
 Read the PIMF book almost anywhere. Available as a PDF, EPUB and MOBI. You can now read it on all devices, as well as offline: https://leanpub.com/pimf-starter/
 
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/gjerokrsteski/pimf-blog-mysql/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
