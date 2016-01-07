@@ -56,6 +56,8 @@ Installation & Configuration
 ```sql
   CREATE DATABASE IF NOT EXISTS db_blog;
 
+  USE TABLE db_blog;
+
   CREATE TABLE IF NOT EXISTS blog (
     `id` INTEGER(10) PRIMARY KEY AUTO_INCREMENT,
     `title` VARCHAR(50) NOT NULL,

@@ -1,7 +1,7 @@
 <?php
 namespace MyFirstBlog\Controller;
 
-use Pimf\Controller\Base, Pimf\View, Pimf\Registry, Pimf\Util\Validator,
+use Pimf\Controller\Base, Pimf\View, Pimf\Util\Validator,
     Pimf\Controller\Exception as Bomb,
     Pimf\Cli\Std, MyFirstBlog\Model\Entry;
 
@@ -38,7 +38,7 @@ class Blog extends Base
   {
     // use app/MyFirstBlog/_templates/list.phtml for viewing
     $viewAllEntries = new View('list.phtml');
-    $entries        = Registry::get('em')->entry->getAll();
+    $entries        = $this->em->entry->getAll();
 
     // assign data to the template
     $viewAllEntries->assign('entries', $entries);
@@ -64,7 +64,7 @@ class Blog extends Base
     // use app/MyFirstBlog/_templates/entry.phtml for viewing
     $viewSingleEntry = new View('article.phtml');
 
-    $entry = Registry::get('em')->entry->find(
+    $entry = $this->em->entry->find(
       $this->request->fromGet()->get('id')
     );
 
@@ -82,7 +82,7 @@ class Blog extends Base
    */
   public function deleteAction()
   {
-    Registry::get('em')->entry->delete(
+    $this->em->entry->delete(
       $this->request->fromGet()->get('id')
     );
 
@@ -102,7 +102,7 @@ class Blog extends Base
     }
 
     /* @var $em \Pimf\EntityManager */
-    $em = Registry::get('em');
+    $em = $this->em;
 
     // find entry by id
     $entry = $em->entry->find(
@@ -123,7 +123,7 @@ class Blog extends Base
     $title   = $std->read('article title');
     $content = $std->read('article content');
 
-    $res = Registry::get('em')->entry->insert(
+    $res = $this->em->entry->insert(
       new Entry($title, $content)
     );
 
@@ -141,7 +141,7 @@ class Blog extends Base
     $title   = $std->read('article title');
     $content = $std->read('article content');
 
-    $em    = Registry::get('em');
+    $em    = $this->em;
     $entry = new Entry($title, $content);
 
     $entry = $em->entry->reflect($entry, $id);
@@ -160,7 +160,7 @@ class Blog extends Base
 
     $id = $std->read('entry id', '/[1-9999]/');
 
-    $res = Registry::get('em')->entry->delete($id);
+    $res = $this->em->entry->delete($id);
 
     var_dump($res);
   }
@@ -173,7 +173,7 @@ class Blog extends Base
   {
     try {
 
-      $pdo = Registry::get('em')->getPDO();
+      $pdo = $this->em->getPDO();
 
       $res = $pdo->exec(
         file_get_contents(

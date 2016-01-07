@@ -1,4 +1,3 @@
-#!/usr/bin/php
+#!/usr/bin/env php
 <?php
 require 'index.php';
-?>
