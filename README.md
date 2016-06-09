@@ -29,7 +29,9 @@ Installation & Configuration
 3.) Update all submodules
 
 ```cli
-  git submodule foreach git pull origin master
+  git submodule --quiet sync
+  git submodule --quiet update --force --init --recursive
+  git submodule foreach git pull --force origin master
 ```
 
 4.) Please configure your database connection at **app/MyFirstBlog/config.app.php** according to you system needs.
