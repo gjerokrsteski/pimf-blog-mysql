@@ -31,7 +31,6 @@ Installation & Configuration
 ```cli
   git submodule --quiet sync
   git submodule --quiet update --force --init --recursive
-  git submodule foreach git pull --force origin master
 ```
 
 4.) Please configure your database connection at **app/MyFirstBlog/config.app.php** according to you system needs.
@@ -102,8 +101,4 @@ Learning PIMF
 One of the best ways to learn PIMF is to read through the entirety of its documentation. This guide details all aspects of the framework and how to apply them to your application. https://github.com/gjerokrsteski/pimf/wiki
 
 Read the PIMF book almost anywhere. Available as a PDF, EPUB and MOBI. You can now read it on all devices, as well as offline: https://leanpub.com/pimf-starter/
-
-
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/gjerokrsteski/pimf-blog-mysql/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
