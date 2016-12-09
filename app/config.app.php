@@ -51,7 +51,7 @@ return array(
     'key'                => 'some5secret5key5here', // application key
     'default_controller' => 'blog', // the name of the fallback controller
     'routeable'          => true, // get cleaner URLs or not
-    'url'                => 'http://localhost:8000', // URL used to access your application without a trailing slash.
+    'url'                => '/', // URL used to access your application without a trailing slash.
     'index'              => '', // if you are using mod_rewrite to get cleaner URLs let it empty otherwise set index.php
     'asset_url'          => '', // the base URL used for your application's asset files
   ),
@@ -64,7 +64,7 @@ return array(
   'production' => array(
     'db' => array(
       'driver' => 'mysql',
-      'host' => 'localhost',
+      'host' => 'mysql',
       'database' => 'db_blog',
       'username' => 'root',
       'password' => '',
@@ -112,7 +112,7 @@ return array(
   'session' => array(
 
       // Session storage 'cookie', 'file', 'pdo', 'memcached', 'apc', 'redis', 'dba', 'wincache', 'memory'
-      'storage' => 'pdo',
+      'storage' => '',
 
       // If using file storage - default is null
       'storage_path' => 'app/MyFirstBlog/_session/',
@@ -154,7 +154,7 @@ return array(
   'cache' => array(
 
       // Cache storage 'pdo', 'file', 'memcached', 'apc', 'redis', 'dba', 'wincache', 'memory'
-      'storage' => 'file',
+      'storage' => '',
 
       // If using file storage - default is null
       'storage_path' => 'app/MyFirstBlog/_cache/',

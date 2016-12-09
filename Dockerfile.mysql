@@ -1,0 +1,12 @@
+FROM alpine:latest
+
+WORKDIR /app
+VOLUME /app
+
+RUN apk add --update mysql mysql-client && rm -f /var/cache/apk/*
+RUN mysql_install_db --user=root > /dev/null
+RUN mkdir -p /run/mysqld
+
+EXPOSE 3306
+
+ENTRYPOINT exec /usr/bin/mysqld --user=root --console

@@ -72,24 +72,18 @@ Installation & Configuration
   php pimf core:init
 ```
 
-7.) Let PIMF generate the **sqlite** session table for you!
-
-```cli
-  php pimf core:createSessionTable
-```
-
-8.) Finally create one or more test entries at your blog.
+7.) Finally create one or more test entries at your blog.
 
 ```cli
   php pimf blog:insert
 ```
 
-9.) Navigate to your application in a web browser. If all is well, you should see a pretty PIMF splash page. Get ready - there is lot more to learn!
+8.) Navigate to your application in a web browser. If all is well, you should see a pretty PIMF splash page. Get ready - there is lot more to learn!
     
 Alternatively you can run the PHP's built-in web server that is provided since PHP 5.4.0
    
 ```php   
-   php -S localhost:8000
+   php -S 127.0.0.1:1337
 ```
 
 Please notice: this web server was designed to aid application development. It may also be useful for testing purposes or for 
