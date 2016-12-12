@@ -67,7 +67,7 @@ return array(
       'host' => 'mysql',
       'database' => 'db_blog',
       'username' => 'root',
-      'password' => '',
+      'password' => 'my-secret-pw',
       'charset' => 'utf8',
       'port' => '3306',
       // 'unix_socket' => '',

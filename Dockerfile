@@ -34,14 +34,8 @@ RUN apk update && \
     apk del tzdata && \
     rm -rf /var/cache/apk/*
 
-# initialize the PIMF application
-RUN php pimf core:init
-
-# create blog database if not exists
-RUN php pimf blog:create_blog_table
-
 # expose the external port
 EXPOSE 1337
 
 # run the PHP's built-in web server
-ENTRYPOINT php -S 0.0.0.0:1337
+CMD php -S 0.0.0.0:1337
