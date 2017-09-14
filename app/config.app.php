@@ -64,10 +64,10 @@ return array(
   'production' => array(
     'db' => array(
       'driver' => 'mysql',
-      'host' => 'mysql',
+      'host' => 'localhost',
       'database' => 'db_blog',
       'username' => 'root',
-      'password' => 'my-secret-pw',
+      'password' => 'root',
       'charset' => 'utf8',
       'port' => '3306',
       // 'unix_socket' => '',
